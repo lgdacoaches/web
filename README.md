@@ -5,8 +5,6 @@ Plain HTML, CSS and a little JavaScript. No build step: open `index.html`, or up
 Pages: `index.html`, `about.html`, `under-14s.html`, `calendar.html`
 
 ## To finish before launch
-- `assets/images/badge.png` – the original club badge, unaltered (header on every page)
-- `assets/images/fa-accredited.jpg` – England Football Accredited logo (footer on every page)
 - `assets/docs/` – download the PDFs from the old site and save with these names: young-players, spectators-and-parents, coaches-and-officials, anti-bullying-policy, photography-guidelines, safeguarding-policy, privacy-policy (all `.pdf`).
   Note: on the old site the Photography Guidelines and Safeguarding Policy buttons point at the same file, so check the right document is saved for each.
 - Placeholders (dashed blue boxes, `.ph`) – replace each with `<img src="assets/images/..." alt="...">`; images are cropped to fit automatically
