@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Under 14s | LGDA</title>
+<meta name="description" content="LGDA Under 14s: coaches, sponsors, squad and honours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+<!-- BADGE: save the original club badge as assets/images/badge.png (do not alter it) -->
+<a class="badge" href="index.html"><img src="assets/images/badge.png" alt="LGDA FC home" height="64"></a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#teams" aria-current="page">Teams</a><a href="https://lgda.pendlesportswear.co.uk/">Club Shop</a></nav>
+</div></header>
+<main id="main">
+<section><div class="wrap grid hero-grid" style="grid-template-columns:1.1fr 1fr">
+<div><p class="kicker">LGDA Teams</p><h1>Under 14s</h1><p class="lead-l mt-m">Train Tuesdays &amp; Thursdays. Matches on Saturdays.</p></div>
+<div class="ph h-340">Team photo placeholder</div></div></section>
+<section class="tint"><div class="wrap"><h2 class="mb-m">Thanks to...</h2>
+<!-- Replace the Logo placeholders with sponsor logos and the caption with what they sponsor, e.g. "Shirts" -->
+<div class="grid cols-3">
+<figure class="card tile"><div class="ph h-220">Home kit photo</div><h3 class="mb-s" style="margin-top:0">Home</h3><div class="grid cols-2 keep-2 gap-m"><div class="logo-slot"><div class="ph ">Logo</div><p>[What they sponsor]</p></div><div class="logo-slot"><div class="ph ">Logo</div><p>[What they sponsor]</p></div></div></figure>
+<figure class="card tile"><div class="ph h-220">Away kit photo</div><h3 class="mb-s" style="margin-top:0">Away</h3><div class="grid cols-2 keep-2 gap-m"><div class="logo-slot"><div class="ph ">Logo</div><p>[What they sponsor]</p></div><div class="logo-slot"><div class="ph ">Logo</div><p>[What they sponsor]</p></div></div></figure>
+<figure class="card tile"><div class="ph h-220">Training kit photo</div><h3 class="mb-s" style="margin-top:0">Training</h3><div class="grid cols-2 keep-2 gap-m"><div class="logo-slot"><div class="ph ">Logo</div><p>[What they sponsor]</p></div><div class="logo-slot"><div class="ph ">Logo</div><p>[What they sponsor]</p></div></div></figure>
+</div></div></section>
+<section><div class="wrap"><h2 class="mb-m">Coaches</h2><div class="grid cols-4 keep-2">
+<div><div class="ph h-240">Photo</div><h3 class="name">Lee Evans</h3></div>
+<div><div class="ph h-240">Photo</div><h3 class="name">Karl Finn</h3></div>
+<div><div class="ph h-240">Photo</div><h3 class="name">John Danslow</h3></div>
+<div><div class="ph h-240">Photo</div><h3 class="name">Matt Wells</h3></div>
+</div></div></section>
+<!-- OPTIONAL: delete this whole section if there is no squad photo or list -->
+<section style="padding-top:0"><div class="wrap"><h2 class="mb-m">The squad</h2>
+<div class="ph h-320 mb-s">Squad photo placeholder</div>
+<div class="grid cols-4 keep-2">
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+<div><div class="ph h-200">Photo</div><h3 class="name">[Player name]</h3></div>
+</div></div></section>
+<section class="tint"><div class="wrap"><h2 class="mb-s">Honours</h2><ul class="card list-card"><li>Evergreen Tournament U14 Cup Winners · 2025</li><li>HGFPL U13 Division Four Runners Up · 2024/25</li><li>CCYFC Tournament U12 Plate Winners · 2024</li><li>Evergreen Tournament U11 Plate Winners · 2023</li></ul></div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<!-- FA badge: save as assets/images/fa-accredited.jpg -->
+<img src="assets/images/fa-accredited.jpg" alt="England Football Accredited club">
+<div><h3>Contact us: <a href="mailto:admin@lgda.co.uk">admin@lgda.co.uk</a></h3>
+<p>LGDA Ltd registered in England and Wales with registered number 13153980</p></div>
+</div></footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
