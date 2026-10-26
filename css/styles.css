@@ -95,6 +95,7 @@ a.card:hover{border-color:var(--blue)}
 }
 .team-photo{width:100%;height:340px;object-fit:cover;object-position:center 30%;border-radius:16px}
 .kit-photo{width:100%;height:220px;object-fit:contain;background:#E6EDFA;border-radius:16px;margin-bottom:16px}
+.map{display:block;width:100%;min-height:300px;border:0;border-radius:16px}
 
 /* Honours list */
 .honours{list-style:none;margin:0;padding:0;max-width:880px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
