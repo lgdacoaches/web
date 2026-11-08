@@ -59,6 +59,8 @@ a.card:hover{border-color:var(--blue)}
 .marquee.is-running .marquee__track{animation:scroll 45s linear infinite}
 .marquee.is-running:hover .marquee__track{animation-play-state:paused}
 .marquee__group{display:flex;gap:24px;padding-right:24px}
+.marquee + .marquee{margin-top:16px}
+.marquee--b.is-running .marquee__track{animation-direction:reverse}
 .logo-tile{width:220px;height:96px;flex:none;background:#fff;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:8px}
 .logo-tile img{max-width:180px;max-height:64px;object-fit:contain}
 .logo-tile .ph{font-size:11px;border-radius:0;max-width:180px;max-height:64px}
