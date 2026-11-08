@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Under 11s | LGDA</title>
+<script>document.documentElement.className+=' js'</script>
 <meta name="description" content="LGDA Under 11s: coaches, sponsors, squad and honours.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,14 @@
 <header class="site-header"><div class="wrap">
 <!-- BADGE: save the original club badge as assets/images/badge.png (do not alter it) -->
 <a class="badge" href="index.html"><img src="assets/images/badge.png" alt="LGDA FC home" height="64"></a>
-<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#teams" aria-current="page">Teams</a><a href="https://lgda.pendlesportswear.co.uk/">Club Shop</a></nav>
+
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+  <svg class="i-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  <svg class="i-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  <span class="t-open">Menu</span><span class="t-close">Close</span>
+</button>
+
+<nav class="nav" id="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#teams" aria-current="page">Teams</a><a href="https://lgda.pendlesportswear.co.uk/">Club Shop</a></nav>
 </div></header>
 <main id="main">
 <section><div class="wrap grid hero-grid" style="grid-template-columns:1.1fr 1fr">
