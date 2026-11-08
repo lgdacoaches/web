@@ -37,3 +37,23 @@
   var current = cal.querySelector('details[data-month="' + key + '"]');
   if (current) { setAll(false); current.open = true; }
 })();
+
+// Mobile menu: floating panel
+(function () {
+  var btn = document.querySelector('.menu-toggle');
+  var nav = document.getElementById('site-nav');
+  if (!btn || !nav) return;
+  function set(open) {
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    nav.classList.toggle('is-open', open);
+  }
+  btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  document.addEventListener('click', function (e) {
+    if (nav.classList.contains('is-open') && !nav.contains(e.target) && !btn.contains(e.target)) set(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) { set(false); btn.focus(); }
+  });
+  window.matchMedia('(min-width:761px)').addEventListener('change', function (e) { if (e.matches) set(false); });
+})();
