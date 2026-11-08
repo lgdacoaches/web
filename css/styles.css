@@ -141,6 +141,10 @@ button.btn{font:inherit;font-weight:700;cursor:pointer;border:0;margin:0}
 @media(max-width:760px){
   .hero-grid{gap:24px}
   .hero-copy{display:contents}
+  .hero-copy h1{order:1}
+  .hero .carousel{order:2}
+  .hero .schedule{order:3;margin-top:0}
+}
 
 /* Mobile menu button (hidden on desktop) */
 .menu-toggle{display:none;align-items:center;gap:8px;background:none;color:#fff;border:2px solid #fff;border-radius:99px;padding:10px 16px;font:inherit;font-weight:700;cursor:pointer;min-height:44px}
@@ -159,8 +163,4 @@ button.btn{font:inherit;font-weight:700;cursor:pointer;border:0;margin:0}
   .js .nav a{padding:14px 16px;font-size:18px;border-radius:0}
   .js .nav a + a{border-top:1px solid rgba(255,255,255,.2)}
   .js .nav a[aria-current]{border-radius:12px;border-top-color:transparent}
-}
-  .hero-copy h1{order:1}
-  .hero .carousel{order:2}
-  .hero .schedule{order:3;margin-top:0}
 }
