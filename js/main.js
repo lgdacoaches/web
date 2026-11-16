@@ -57,3 +57,36 @@
   });
   window.matchMedia('(min-width:761px)').addEventListener('change', function (e) { if (e.matches) set(false); });
 })();
+
+// Click/tap any content photo to view it full size
+(function () {
+  var dlg = document.createElement('dialog');
+  dlg.className = 'lightbox';
+  dlg.innerHTML = '<img alt=""><p class="lightbox__cap"></p><button type="button" class="lightbox__close" aria-label="Close">×</button>';
+  document.body.appendChild(dlg);
+  var big = dlg.querySelector('img'), cap = dlg.querySelector('.lightbox__cap');
+
+  function open(img) {
+    big.src = img.dataset.full || img.currentSrc || img.src;
+    big.alt = img.alt;
+    cap.textContent = img.alt;
+    dlg.showModal();
+  }
+
+  document.querySelectorAll('main img').forEach(function (img) {
+    // skip logos, the rotating carousel, placeholders and anything marked no-zoom
+    if (img.closest('.logo-tile, .logo-slot, .carousel, .no-zoom') ||
+        img.classList.contains('about-logo') ||
+        img.src.indexOf('placeholder') > -1) return;
+    img.classList.add('zoomable');
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Enlarge photo: ' + img.alt);
+    img.addEventListener('click', function () { open(img); });
+    img.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); }
+    });
+  });
+
+  dlg.addEventListener('click', function () { dlg.close(); });
+})();
